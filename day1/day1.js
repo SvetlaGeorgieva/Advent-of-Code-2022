@@ -1,5 +1,4 @@
 const fs = require("fs");
-const internal = require("stream");
 
 const readInputAsArray = function (file) {
   let input = fs.readFileSync(file).toString("utf-8");
@@ -32,7 +31,7 @@ const day1a = function () {
 }
 
 ///// day 1: part 1 results
-// day1a(); // 66186
+day1a(); // 66186
 
 //-------------
 // 1b) The top 3 elves with most snacks -> sum of the snacks

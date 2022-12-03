@@ -1,5 +1,4 @@
 const fs = require("fs");
-const internal = require("stream");
 
 const readInputAsArray = function (file) {
   let input = fs.readFileSync(file).toString("utf-8");
@@ -33,7 +32,7 @@ const day2a = function () {
     if (game) {
       myScore = myScore + Scores[game];
     }
-  })
+  });
 
   console.log(myScore);
   return myScore;
@@ -65,7 +64,7 @@ const day2b = function () {
     if (game) {
       myScore = myScore + CorrectedScores[game];
     }
-  })
+  });
 
   console.log(myScore);
   return myScore;
